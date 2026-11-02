@@ -132,7 +132,23 @@ cd AlarmBoss
 ./build.sh
 ```
 
-`build.sh` signs the APK only if a signing keystore is present (`alarm-boss.keystore` + a `KEYSTORE_NOTE.txt` with the store/key passwords — **never committed to this repo**). Without one, it leaves an unsigned aligned APK at `build/aligned.apk` and tells you so.
+`build.sh` signs the APK only if it finds a signing keystore. It looks first for `./alarm-boss.keystore` in the repo folder, so anyone who clones this repo can sign with their own key; a keystore at the original builder's absolute path is still accepted as a fallback. The key alias comes from `ALARMBOSS_KEY_ALIAS` in `KEYSTORE_NOTE.txt` (default `alarmboss`). Without a keystore, it leaves an unsigned aligned APK at `build/aligned.apk` and tells you so — an unsigned APK cannot be installed on a phone.
+
+**Signing with your own key (first-time setup, once):**
+
+```sh
+keytool -genkeypair -v -keystore alarm-boss.keystore -alias myalias -keyalg RSA -keysize 2048 -validity 10000
+```
+
+Then create `KEYSTORE_NOTE.txt` next to `build.sh` (**never committed** — both files are gitignored):
+
+```
+ALARMBOSS_STORE_PASSWORD=<your store password>
+ALARMBOSS_KEY_PASSWORD=<your key password>
+ALARMBOSS_KEY_ALIAS=myalias
+```
+
+Re-run `./build.sh` and it produces a signed `build/AlarmBoss.apk` you can install. Note: an APK signed with your key will not install over a release signed with a different key — uninstall the other one first.
 
 ## 📜 Version history
 
