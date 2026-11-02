@@ -66,13 +66,18 @@ Stock clock apps bury your alarms in one endless list. AlarmBoss was built for t
 
 ## 📸 Screenshots
 
-> Screenshots captured on a real device and a short demo video are being added to this section. If you're reading this on GitHub and they're not here yet, check the latest release — media lands with the next update.
+> Walkthrough frames recreated in the app's v1.5 style (not photographs of a real phone screen). Real device captures will replace them when available.
 
-Planned shots: slot view, expanded slot, search, add/edit alarm, settings & customization, quick widget, clock widget, schedule widget (with a SNOOZED row), and the ringing screen.
+| | |
+|---|---|
+| <img src="assets/screenshots/01-slots.png" width="270"><br>Hour-slot view | <img src="assets/screenshots/02-expanded-slot.png" width="270"><br>Expanded slot |
+| <img src="assets/screenshots/03-search.png" width="270"><br>Search | <img src="assets/screenshots/04-add-alarm.png" width="270"><br>Add alarm |
+| <img src="assets/screenshots/05-settings.png" width="270"><br>Settings & customization | <img src="assets/screenshots/06-widgets.png" width="270"><br>Three widgets |
+| <img src="assets/screenshots/07-schedule-snoozed.png" width="270"><br>Schedule widget with SNOOZED row | <img src="assets/screenshots/08-ringing.png" width="270"><br>Ringing screen |
 
 ## 🎬 Demo video
 
-> A short screen-recorded demo (set an alarm, snooze it, watch the schedule widget update) is being added here.
+▶ **[Watch the demo video (91 seconds)](https://github.com/iit2023271/AlarmBoss/releases/download/v1.5/AlarmBoss-Demo.mp4)** — slot view, search, adding an alarm, widgets, the snooze flow, and the schedule widget updating. Also attached to the [v1.5 release](https://github.com/iit2023271/AlarmBoss/releases/tag/v1.5). The video is a recreated walkthrough, not a phone screen recording.
 
 ## 📥 Installation
 
