@@ -1,0 +1,11 @@
+# Build outputs and local signing material — never commit these.
+*.apk
+*.keystore
+KEYSTORE_NOTE.txt
+build/
+*.class
+# IDE / OS noise
+.idea/
+*.iml
+local.properties
+.DS_Store

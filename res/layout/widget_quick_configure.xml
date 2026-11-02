@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick quick durations and chip count" />
+
+    <CheckBox android:id="@+id/cfg_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="15 min" />
+    <CheckBox android:id="@+id/cfg_30" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="30 min" />
+    <CheckBox android:id="@+id/cfg_1h" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1 hour" />
+    <CheckBox android:id="@+id/cfg_2h" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2 hours" />
+    <CheckBox android:id="@+id/cfg_3h" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3 hours" />
+    <CheckBox android:id="@+id/cfg_6h" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="6 hours" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of chips"
+        android:textStyle="bold"
+        android:paddingTop="12dp" />
+
+    <RadioGroup
+        android:id="@+id/cfg_count_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/cfg_count_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" />
+        <RadioButton android:id="@+id/cfg_count_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+        <RadioButton android:id="@+id/cfg_count_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/cfg_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+</LinearLayout>

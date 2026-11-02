@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Google Clock-like palette (v1.4). -->
+    <color name="app_bg">#f8f9fa</color>
+    <color name="card_bg">#ffffff</color>
+    <color name="text_primary">#202124</color>
+    <color name="text_secondary">#5f6368</color>
+    <color name="accent">#1a73e8</color>
+    <color name="badge_on">#1a73e8</color>
+    <color name="badge_off">#5f6368</color>
+    <color name="badge_snoozed">#e8710a</color>
+    <color name="badge_off_bg">#e8eaed</color>
+    <color name="danger">#d93025</color>
+</resources>

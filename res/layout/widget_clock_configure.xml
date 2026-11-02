@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minute step for M+/M−"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/cfg_step_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton android:id="@+id/cfg_step_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1 minute" />
+        <RadioButton android:id="@+id/cfg_step_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="5 minutes" />
+        <RadioButton android:id="@+id/cfg_step_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="15 minutes" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time format"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/cfg_format_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton android:id="@+id/cfg_fmt_system" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="System default" />
+        <RadioButton android:id="@+id/cfg_fmt_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="12-hour" />
+        <RadioButton android:id="@+id/cfg_fmt_24" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="24-hour" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/cfg_clock_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+</LinearLayout>

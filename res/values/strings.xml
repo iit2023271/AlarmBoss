@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AlarmBoss</string>
+    <string name="search_hint">Search alarms by name or time…</string>
+    <string name="no_alarms">No alarms yet — tap + Add</string>
+    <string name="already_exists">Alarm already exists — turned on</string>
+</resources>

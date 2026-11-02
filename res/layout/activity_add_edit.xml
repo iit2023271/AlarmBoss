@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TimePicker
+                android:id="@+id/time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:padding="16dp">
+            <EditText
+                android:id="@+id/label_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Label (optional)"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Repeat days (none = one-time)"
+                android:paddingTop="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox android:id="@+id/day_mon" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Mon" android:textSize="12sp" />
+                <CheckBox android:id="@+id/day_tue" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Tue" android:textSize="12sp" />
+                <CheckBox android:id="@+id/day_wed" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Wed" android:textSize="12sp" />
+                <CheckBox android:id="@+id/day_thu" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Thu" android:textSize="12sp" />
+                <CheckBox android:id="@+id/day_fri" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Fri" android:textSize="12sp" />
+                <CheckBox android:id="@+id/day_sat" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Sat" android:textSize="12sp" />
+                <CheckBox android:id="@+id/day_sun" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Sun" android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:padding="16dp">
+            <CheckBox
+                android:id="@+id/global_ringtone_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use global ringtone"
+                android:checked="true" />
+            <Button
+                android:id="@+id/choose_ringtone_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose ringtone…"
+                android:enabled="false" />
+            <TextView
+                android:id="@+id/ringtone_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Global"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Save" />
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Cancel" />
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Delete"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

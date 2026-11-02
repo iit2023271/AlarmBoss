@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_bg"
+    android:padding="12dp">
+    <TextView
+        android:id="@+id/clock_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/clock_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#FFCCCCCC"
+        android:gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/btn_h_minus" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@android:color/white" android:text="H−" />
+        <Button android:id="@+id/btn_h_plus" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@android:color/white" android:text="H+" />
+        <Button android:id="@+id/btn_m_minus" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@android:color/white" android:text="M−" />
+        <Button android:id="@+id/btn_m_plus" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@android:color/white" android:text="M+" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="SET" />
+    <TextView
+        android:id="@+id/clock_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#FFCCCCCC"
+        android:gravity="center" />
+</LinearLayout>

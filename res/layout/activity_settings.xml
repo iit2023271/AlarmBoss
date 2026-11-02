@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Global ringtone (used by every alarm without its own sound)"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/global_ringtone_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp" />
+            <Button
+                android:id="@+id/pick_global_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Choose global ringtone" />
+            <Button
+                android:id="@+id/preview_global_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preview global ringtone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:padding="16dp">
+            <CheckBox
+                android:id="@+id/force_max_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Force max alarm volume when an alarm fires" />
+            <Button
+                android:id="@+id/apply_all_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apply global ringtone to ALL alarms" />
+            <Button
+                android:id="@+id/exact_alarm_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exact alarm permission settings" />
+            <Button
+                android:id="@+id/battery_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Battery optimisation settings" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customization"
+                android:textStyle="bold" />
+            <CheckBox
+                android:id="@+id/group_by_hour_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Group alarms by hour" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Snooze length"
+                android:paddingTop="8dp" />
+            <Spinner
+                android:id="@+id/snooze_minutes_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auto-stop ringing after"
+                android:paddingTop="8dp" />
+            <Spinner
+                android:id="@+id/auto_stop_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/vibrate_ringing_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vibrate while ringing" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time format"
+                android:paddingTop="8dp" />
+            <Spinner
+                android:id="@+id/time_format_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alarm list order"
+                android:paddingTop="8dp" />
+            <Spinner
+                android:id="@+id/sort_order_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/allow_snooze_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Allow snooze" />
+            <Button
+                android:id="@+id/delete_all_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete all alarms" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
