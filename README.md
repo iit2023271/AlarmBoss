@@ -77,7 +77,9 @@ Stock clock apps bury your alarms in one endless list. AlarmBoss was built for t
 
 ## 🎬 Demo video
 
-▶ **[Watch the demo video (91 seconds)](https://github.com/iit2023271/AlarmBoss/releases/download/v1.5/AlarmBoss-Demo.mp4)** — slot view, search, adding an alarm, widgets, the snooze flow, and the schedule widget updating. Also attached to the [v1.5 release](https://github.com/iit2023271/AlarmBoss/releases/tag/v1.5). The video is a recreated walkthrough, not a phone screen recording.
+![AlarmBoss demo video](assets/demo/AlarmBoss-Demo.mp4)
+
+Slot view, search, adding an alarm, widgets, the snooze flow, and the schedule widget updating — 91 seconds. The video is a recreated walkthrough, not a phone screen recording. Also attached to the [v1.5 release](https://github.com/iit2023271/AlarmBoss/releases/tag/v1.5) if you want to download it.
 
 ## 📥 Installation
 
